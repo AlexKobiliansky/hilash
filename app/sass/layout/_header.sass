@@ -1,0 +1,63 @@
+.main-head
+  background-color: #e9e9e9
+  padding: 0 70px 0 90px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.main-mnu
+  font-size: 0
+  text-transform: uppercase
+  li
+    display: inline-block
+    a
+      font-size: 14px
+      color: inherit
+      +mt(.2s)
+      display: block
+      line-height: 1
+      padding: 49px 12px 45px
+      border-bottom: 4px solid transparent
+      &:hover
+        color: $accent
+        border-color: $accent
+
+.callus
+  font-size: 30px
+  +mt(.3s)
+  color: $text
+  font-weight: 700
+  position: relative
+  padding-left: 30px
+  line-height: 1
+  &:before
+    content: ''
+    position: absolute
+    width: 19px
+    height: 19px
+    +bg-cover
+    background-image: url('../img/icons/callus-icon.png')
+    left: 0
+    top: 5px
+  &:hover
+    color: $accent
+
+.head-btn-container
+  .btn:first-child
+    margin-right: 10px
+
+.hamburger
+  display: none
+  position: relative
+  top: 4px
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+  height: 6px
+  border-radius: 6px
+  background-color: $accent
+
+.hamburger.is-active:hover, .hamburger:hover
+  opacity: 1
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+  background-color: $accent

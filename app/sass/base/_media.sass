@@ -3,6 +3,32 @@
 
 /*==========  Desktop First  ==========*/
 
+@media screen and (max-width: 1800px)
+  .main-head
+    padding: 0 15px
+
+@media screen and (max-width: 1600px)
+  .main-mnu
+    display: none
+
+  .main-head
+    padding: 15px 15px 0 15px
+    flex-wrap: wrap
+
+  .hamburger
+    display: block
+
+  .head-item
+    width: 50%
+    margin-bottom: 30px
+
+  .hamburger, .head-btn-container
+    text-align: right
+
+  .logo
+    margin-bottom: 50px
+
+
 // ≥1200px
 +media-breakpoint-down(lg)
 
@@ -11,10 +37,48 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .head-item
+    width: auto
+    margin-bottom: 0
+
+  .callus
+    display: block
+    width: 228px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 20px
+
+  .main-head
+    display: block
+    padding-bottom: 50px
+  .logo
+    display: inline-block
+    margin-bottom: 0
+  .hamburger
+    display: inline-block
+    float: right
+    top: 10px
+
+  .head-btn-container
+    text-align: center
+    display: block
+    margin-top: 40px
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .logo
+    max-width: 200px
+  .hamburger
+    top: 5px
 
+  .head-btn-container
+    .btn, .btn:first-child
+      margin-right: 0
+      margin-bottom: 15px
+      display: block
+
+  .main-head
+    padding-bottom: 30px
 
 /*==========  Mobile First  ==========*/
 
