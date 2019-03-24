@@ -18,20 +18,21 @@
   .hamburger
     display: block
 
-
-
   .hamburger, .head-btn-container
     text-align: right
-
-  .logo
-    //margin-bottom: 50px
-
 
 // ≥1200px
 +media-breakpoint-down(lg)
 
 // ≥992px
 +media-breakpoint-down(md)
+  .s-intro
+    h1
+      font-size: 60px
+
+  .intro-form
+    width: 50%
+
   .head-item
     width: 50%
     margin-bottom: 30px
@@ -46,6 +47,15 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .s-intro
+    h1
+      font-size: 48px
+    h2
+      font-size: 20px
+  .intro-form
+    width: 100%
+
   .head-item
     width: auto
     margin-bottom: 0
@@ -75,19 +85,31 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .s-intro
+    h1
+      font-size: 36px
+
+  .callus
+    margin-top: 10px
+    font-size: 20px
+    width: 190px
+    &:before
+      top: 3px
+
   .logo
     max-width: 200px
   .hamburger
     top: 5px
 
   .head-btn-container
+    margin-top: 30px
     .btn, .btn:first-child
       margin-right: 0
       margin-bottom: 15px
       display: block
 
   .main-head
-    padding-bottom: 30px
+    padding-bottom: 10px
 
 /*==========  Mobile First  ==========*/
 
