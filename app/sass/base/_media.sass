@@ -12,21 +12,19 @@
     display: none
 
   .main-head
-    padding: 15px 15px 0 15px
+    padding: 15px
     flex-wrap: wrap
 
   .hamburger
     display: block
 
-  .head-item
-    width: 50%
-    margin-bottom: 30px
+
 
   .hamburger, .head-btn-container
     text-align: right
 
   .logo
-    margin-bottom: 50px
+    //margin-bottom: 50px
 
 
 // ≥1200px
@@ -34,6 +32,17 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  .head-item
+    width: 50%
+    margin-bottom: 30px
+
+  .head-btn-container
+    .btn
+      font-size: 14px
+
+  .callus
+    font-size: 26px
+
 
 // ≥768px
 +media-breakpoint-down(sm)
