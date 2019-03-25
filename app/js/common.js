@@ -68,6 +68,7 @@ $(function() {
             $('.num-item-val').height('auto').equalHeights();
             $('.who-item-desc').height('auto').equalHeights();
             $('.who-item-title').height('auto').equalHeights();
+            $('.why-item').height('auto').equalHeights();
         }
 
     }
