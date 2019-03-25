@@ -63,6 +63,39 @@ $(function() {
         scrollToTopOnError: false
     });
 
+    function heightses() {
+        if ($(window).width()>480) {
+            $('.num-item-val').height('auto').equalHeights();
+        }
+
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
+    /**
+     * ANIMATE-NUMBER functionality
+     */
+    var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
+    $('.num-item-val span').each(function(){
+        var th = $(this);
+        var number = th.data('num');
+        th.waypoint(function(){
+                th.animateNumber({ number: number, numberStep: comma_separator_number_step }, 2000);
+                this.destroy();
+            }
+            , {
+                offset: "80%"
+            }
+        );
+    });
+    /**
+     * end ANIMATE-NUMBER functionality
+     */
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
