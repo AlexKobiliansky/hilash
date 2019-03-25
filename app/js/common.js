@@ -71,6 +71,12 @@ $(function() {
             $('.why-item').height('auto').equalHeights();
         }
 
+        if ($(window).width()>991) {
+            $('.var-item-title').height('auto').equalHeights();
+            $('.var-item-desc').height('auto').equalHeights();
+            $('.var-item').height('auto').equalHeights();
+        }
+
     }
 
     $(window).resize(function() {

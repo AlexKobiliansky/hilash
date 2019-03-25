@@ -23,6 +23,15 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .var-item-wrapper
+    &:nth-child(odd)
+      .var-item
+        margin-right: 0
+    &:nth-child(even)
+      .var-item
+        margin-left: 0
+
   .num-item
     font-size: 16px
     margin-right: 30px
@@ -114,6 +123,13 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .var-item
+    padding: 30px 15px
+    &-title
+      font-size: 20px
+    &-table
+      font-size: 14px
 
   .why-form
     .form-labels-wrap
