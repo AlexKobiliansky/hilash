@@ -71,6 +71,7 @@ $(function() {
             $('.why-item').height('auto').equalHeights();
             $('.adv-item-desc').matchHeight({byRow: true,});
             $('.adv-item-title').matchHeight({byRow: true,});
+            $('.step-item').matchHeight({byRow: true,});
 
         }
 
