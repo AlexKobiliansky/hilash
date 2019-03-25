@@ -1,0 +1,33 @@
+.s-gen-slider
+  padding-top: 0
+  padding-bottom: 0
+  .container
+    height: 480px
+
+.gen-slider-wrap
+  position: relative
+  top: -100px
+
+.gen-slider
+  .owl-dots
+    width: 100%
+    text-align: center
+    margin-top: 25px
+    button.owl-dot
+      display: inline-block
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background-color: #000
+      margin: 0 10px
+      +mt(.1s)
+      position: relative
+      top: 0
+      left: 0
+      &.active
+        width: 20px
+        height: 20px
+        background-color: $accent
+        top: 5px
+        //left: 5px
+        margin: 0 5px

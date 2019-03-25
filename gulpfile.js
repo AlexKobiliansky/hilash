@@ -48,6 +48,7 @@ gulp.task('scripts', function() {
 		'app/libs/animate-number/jquery.animateNumber.min.js',
 		'app/libs/formstyler/jquery.formstyler.min.js',
 		'app/libs/matchHeight/jquery.matchHeight-min.js',
+		'app/libs/owl-carousel/owl.carousel.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

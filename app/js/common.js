@@ -148,19 +148,46 @@ $(function() {
     /**
      * CALCULATOR
      */
-        $('.calc-select').on('change' , function(e){
+
+
+    var $pakSelect = $('#calc-paket');
+    var $perSelect = $('#calc-period');
+
+
+        $pakSelect.on('change' , function(e){
             e.stopImmediatePropagation();
 
-            var result = $('#calc-paket').val()*$('#calc-population').val()*$('#calc-period').val();
+            var $val = $(this).val();
 
-            $('.income-value span').html(result);
-
+            $perSelect.find('option').each(function() {
+                var $dataval = $(this).data($val);
+                $(this).val($dataval).trigger('refresh');
+            });
+            $result = $('#calc-period option:selected').val();
+            $('.income-value span').html($result);
         });
 
+        $perSelect.on('change', function(e){
+           e.stopImmediatePropagation();
+
+            var $result = $(this).val();
+            $('.income-value span').html($result);
+        });
 
     /**
      * end CALCULATOR
      */
+
+
+    $('.gen-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        items:1,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 8000
+    });
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change

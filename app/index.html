@@ -416,26 +416,18 @@
 								<span>Пакет франшизы</span>
 								<select name="Пакет франшизы" class="calc-select" id="calc-paket">
 									<option disabled selected value style="display: none;"></option>
-									<option value="100">1 пакет франшизы</option>
-									<option value="300">2 пакет франшизы</option>
-								</select>
-							</label>
-
-							<label>
-								<span>Кол-во населения в городе открытия</span>
-								<select name="Кол-во населения" class="calc-select" id="calc-population">
-									<option disabled selected value style="display: none;"></option>
-									<option value="4.5">1000 0000</option>
-									<option value="3">3000 000</option>
+									<option value="pak-1">Студия взгляда Hi Lash!</option>
+									<option value="pak-2">Школа-Студия взгляда Hi Lash!</option>
 								</select>
 							</label>
 
 							<label>
 								<span>Период</span>
 								<select name="Период" class="calc-select" id="calc-period">
-									<option disabled selected value style="display: none;"></option>
-									<option value="20">6 месяцев</option>
-									<option value="30">9 месяцев</option>
+									<option disabled selected value="0" data-pak-1="0" data-pak-2="0" style="display: none;"></option>
+									<option id="op-1" data-pak-1="53000" data-pak-2="50000" value="0">6 месяцев</option>
+									<option id="op-2" data-pak-1="160000" data-pak-2="270000" value="0">12 месяцев</option>
+									<option id="op-3" data-pak-1="200000" data-pak-2="313000" value="0">18 месяцев</option>
 								</select>
 							</label>
 						</div>
@@ -535,6 +527,29 @@
 		</div>
 	</section>
 	<!-- ======= END SECTION ADVANTAGES ======= -->
+
+	<!-- ======= SECTION GENSLIDER ======= -->
+	<section class="s-gen-slider s-white">
+		<div class="container">
+			<div class="gen-slider-wrap">
+				<div class="gen-slider owl-carousel">
+					<!-- slide start -->
+					<img src="img/slide-img.jpg" alt="alt" class="img-responsive">
+					<!-- slide end -->
+
+					<!-- slide start -->
+					<img src="img/slide-img.jpg" alt="alt" class="img-responsive">
+					<!-- slide end -->
+
+					<!-- slide start -->
+					<img src="img/slide-img.jpg" alt="alt" class="img-responsive">
+					<!-- slide end -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ======= END SECTION GENSLIDER ======= -->
+
 
 
 
