@@ -66,6 +66,8 @@ $(function() {
     function heightses() {
         if ($(window).width()>480) {
             $('.num-item-val').height('auto').equalHeights();
+            $('.who-item-desc').height('auto').equalHeights();
+            $('.who-item-title').height('auto').equalHeights();
         }
 
     }
