@@ -105,6 +105,28 @@ $(function() {
      * end ANIMATE-NUMBER functionality
      */
 
+    $('.calc-select').styler({
+        selectPlaceholder: "",
+    });
+
+
+    /**
+     * CALCULATOR
+     */
+        $('.calc-select').on('change' , function(e){
+            e.stopImmediatePropagation();
+
+            var result = $('#calc-paket').val()*$('#calc-population').val()*$('#calc-period').val();
+
+            $('.income-value span').html(result);
+
+        });
+
+
+    /**
+     * end CALCULATOR
+     */
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

@@ -46,6 +46,7 @@ gulp.task('scripts', function() {
 		'app/libs/equalHeights/jquery.equalheights.min.js',
 		'app/libs/waypoints/lib/jquery.waypoints.min.js',
 		'app/libs/animate-number/jquery.animateNumber.min.js',
+		'app/libs/formstyler/jquery.formstyler.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
