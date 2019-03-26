@@ -215,4 +215,10 @@ $(function() {
             $('.main-head').removeClass('sticky')
         }
     });
+
+    $(".main-mnu a").mPageScroll2id({
+        offset: 20
+    });
+
+    $('.preloader').fadeOut();
 });

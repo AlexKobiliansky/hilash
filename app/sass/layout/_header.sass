@@ -4,6 +4,20 @@
   display: flex
   justify-content: space-between
   align-items: center
+  top: 0
+  left: 0
+  +mt(.3s)
+  position: fixed
+  z-index: 999
+  width: 100%
+  &.sticky
+    position: fixed
+    top: 0
+    left: 0
+
+    padding: 3px 15px
+    .main-mnu li a
+      padding: 34px 12px 29px
 
 .main-mnu
   font-size: 0
