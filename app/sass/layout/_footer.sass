@@ -1,0 +1,37 @@
+.main-foot
+  background-color: #000
+  padding-bottom: 60px
+
+.bottom-line
+  padding: 12px 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.foot-callus
+  font-size: 30px
+  +mt(.3s)
+  color: #fff
+  font-weight: 700
+  position: relative
+  padding-left: 30px
+  line-height: 1
+  &:before
+    content: ''
+    position: absolute
+    width: 19px
+    height: 19px
+    +bg-cover
+    background-image: url('../img/icons/callus-icon.png')
+    left: 0
+    top: 5px
+  &:hover
+    color: $accent
+
+.foot-recall
+  font-weight: 700
+  text-transform: uppercase
+  text-decoration: underline
+  &:hover, &:focus, &:active
+    text-decoration: none
+    color: $accent

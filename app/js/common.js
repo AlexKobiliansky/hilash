@@ -205,4 +205,14 @@ $(function() {
         });
         return false;
     });
+
+
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 30) {
+            $('.main-head').addClass('sticky')
+        } else {
+            $('.main-head').removeClass('sticky')
+        }
+    });
 });
