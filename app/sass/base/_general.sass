@@ -90,6 +90,11 @@ ul
     color: $accent
     border-color: $accent
     background-color: transparent
+  &.disabled
+    filter: grayscale(.7)
+    &:hover, &:active, &:focus
+      background-color: $accent
+      color: #fff
 
 .btn-green
   background-color: #49ad37
@@ -201,11 +206,6 @@ section
   50%
     transform: scale(1)
 
-
-
-
-
-
 .preloader
   position: fixed
   top: 0
@@ -222,6 +222,42 @@ section
 //end preloader
 
 
+.popup-form
+  position: relative
+  max-width: 600px
+  background-color: #fff
+  margin-left: auto
+  margin-right: auto
+  padding: 35px 45px 50px
+  border: 2px solid #000
+  border-radius: 10px
+  text-align: center
+  h3
+    font-size: 32px
+    text-transform: uppercase
+
+.hidden
+  display: none!important
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form, .video-popup
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form, &.mfp-ready .video-popup
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form, &.mfp-removing .video-popup
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
 
 
 
