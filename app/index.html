@@ -70,7 +70,7 @@
 		<a href="tel:+8800300345" class="callus head-item">8 800 300-345</a>
 		<span class="head-btn-container head-item">
 			<a href="#popup-form" class="btn btn-pink">Заказать звонок</a>
-			<a href="#0" class="btn btn-green">WhatsApp</a>
+			<a href="https://api.whatsapp.com/send?phone=380636222029" class="btn btn-green">WhatsApp</a>
 		</span>
 	</header>
 	<!-- ======= END HEADER ======= -->
@@ -432,10 +432,10 @@
 							<label>
 								<span>Период</span>
 								<select name="Период" class="calc-select" id="calc-period">
-									<option disabled selected value="0" data-pak-1="0" data-pak-2="0" style="display: none;"></option>
-									<option id="op-1" data-pak-1="53000" data-pak-2="50000" value="0">6 месяцев</option>
-									<option id="op-2" data-pak-1="160000" data-pak-2="270000" value="0">12 месяцев</option>
-									<option id="op-3" data-pak-1="200000" data-pak-2="313000" value="0">18 месяцев</option>
+									<option disabled selected value="0" data-pak-1="0" data-pak-2="0" data-bill-pak-1="0" data-bill-pak-2="0"  style="display: none;"></option>
+									<option data-pak-1="53000" data-pak-2="50000" data-bill-pak-1="504" data-bill-pak-2="600"  value="0">6 месяцев</option>
+									<option data-pak-1="160000" data-pak-2="270000" data-bill-pak-1="840" data-bill-pak-2="860"  value="0">12 месяцев</option>
+									<option data-pak-1="200000" data-pak-2="313000" data-bill-pak-1="930" data-bill-pak-2="960"  value="0">18 месяцев</option>
 								</select>
 							</label>
 						</div>
@@ -443,6 +443,11 @@
 						<div class="income">
 							<span>Ваша прибыль</span>
 							<div class="income-value" id="income-value"><span>0</span> Р</div>
+						</div>
+
+						<div class="income">
+							<span>Среднее количество чеков в месяц</span>
+							<div class="income-value" id="bills-value"><span>0</span></div>
 						</div>
 					</div>
 				</div>

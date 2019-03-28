@@ -162,19 +162,29 @@ $(function() {
 
             var $val = $(this).val();
 
+
             $perSelect.find('option').each(function() {
                 var $dataval = $(this).data($val);
+                var $databills = $(this).data('bill-' + $val);
+                $(this).attr('data-bills', $databills);
                 $(this).val($dataval).trigger('refresh');
             });
-            $result = $('#calc-period option:selected').val();
-            $('.income-value span').html($result);
+            var $result = $('#calc-period option:selected').val();
+            $('#income-value span').html($result);
+
+            var $bills = $('#calc-period option:selected').attr('data-bills');
+            $('#bills-value span').html($bills);
         });
 
         $perSelect.on('change', function(e){
            e.stopImmediatePropagation();
 
             var $result = $(this).val();
-            $('.income-value span').html($result);
+            $('#income-value span').html($result);
+
+            var $bills = $('#calc-period option:selected').attr('data-bills');
+            console.log($bills);
+            $('#bills-value span').html($bills);
         });
 
     /**
@@ -200,7 +210,7 @@ $(function() {
 
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
             setTimeout(function() {
